@@ -3,6 +3,45 @@
 <head>
   <title> WEB1- html </title>
   <meta charset="utf-8">
+  <style>
+
+    a {
+      color:blue ;
+      text-decoration: none;
+      }
+    #active{
+      color:red;
+      }
+    .saw {
+      color:gray;
+      }
+    h1 {
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      font-size: 10px
+      padding:10px;
+      }
+    ol{
+      border-right:1px solid gray;
+      width:100px;
+      margin:0px;
+      padding-top: 10px;
+    }
+    body{
+      margin:0px;
+    }
+    #grid{
+      display: -ms-grid;
+      display: grid;
+
+    
+      grid-template-columns: 150px 1fr;
+      /*column 은 열, low 는 행 */
+    }
+
+
+  </style>
 
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -19,28 +58,26 @@
 
 </script>
 <body>
-
-
   <h1> <a href="1.html">  Web </a> </h1>
-    <ol>
-      <li> <a href="2.html">   HTML</a> </li>
-      <li><a href="3.html">   CSS</a>  </li>
-      <li><a href="4.html">   Javascript</a> </li>
-    <ol>
-      <h2><a href= "2.html"> Html</a> <h2/>
-        <p>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" frameborder="0" allow="accelerometer;
-          autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </P>
+  <div id="grid">
+      <ol>
+        <li> <a href="2.html" class="saw"> HTML</a> </li>
+        <li><a href="3.html" class="saw" id="active"> CSS</a>  </li>
+        <li><a href="4.html">   Javascript</a> </li>
+      </ol>
 
-        <p><a href="https://www.w3.org/TR/html51/" target="_blank" title="html specification"> Hypertext markup language(HTML)</a>
-          is the standard markup language for
-        <strong>creating <u>web</u> pages</strong> and web applications. Web browsers receive Html documents from a web server or from local storage
-        and render them into multimedia web pages. HTML describes the structure of a web page semantically and originaly
-        includes cues for the apperance of the document.</p>
-        <p>HTML elements are the building blocks of HTML elements are the building blocks of HTML pages.
-        with html constructs, images and other objects, such as interactive forms, may be embedded into the rendered page.</p>
+          <h2><a href= "2.html"> Html</a> </h2>
 
+       <div>
+            <p><a href="https://www.w3.org/TR/html51/" target="_blank" title="html specification"> Hypertext markup language(HTML)</a>
+              is the standard markup language for
+            <strong>creating <u>web</u> pages</strong> and web applications. Web browsers receive Html documents from a web server or from local storage
+            and render them into multimedia web pages. HTML describes the structure of a web page semantically and originaly
+            includes cues for the apperance of the document.</p>
+            <p>HTML elements are the building blocks of HTML elements are the building blocks of HTML pages.
+            with html constructs, images and other objects, such as interactive forms, may be embedded into the rendered page.</p>
+       </div>
+  </div>
 <br> <img src="coding.jpg" width= "20%">
 
  <p>
