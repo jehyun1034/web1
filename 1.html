@@ -13,13 +13,17 @@
 
   <h1> Web <h1/>
 
+    <p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" frameborder="0" allow="accelerometer;
+      autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </P>
   ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
   <li>html 의 가장 중요한 < > </> 태그라는 부분. </li>
 
   <h5>HTML이란 무엇인가</h5>
 
 
-  <p><a href="https://www.w3.org/TR/html51/" target="_blank" title="html specification" alt="smiley face"> Hypertext markup language(HTML)</a>
+  <p><a href="https://www.w3.org/TR/html51/" target="_blank" title="html specification" alt Hypertext markup language(HTML)</a>
     is the standard markup language for
   <strong>creating <u>web</u> pages</strong> and web applications. Web browsers receive Html documents from a web server or from local storage
   and render them into multimedia web pages. HTML describes the structure of a web page semantically and originaly
@@ -79,8 +83,11 @@
   <li>egoing</li>
   <li>k8805</li>
   <li>youbin</li>
-  // 각기 다른 목록들을 띄어서 의미를 나눠야 할때는 ul 이라는 태그를 이용한다. li 태그들은 경계를 짓기 위한 부모 태그가 필요하고 ,
+
+
+  각기 다른 목록들을 띄어서 의미를 나눠야 할때는 ul 이라는 태그를 이용한다. li 태그들은 경계를 짓기 위한 부모 태그가 필요하고 ,
   이 부모를 ul 이라고 하는 거지
+
 
   <ul>
   <li>html</li>
@@ -104,3 +111,52 @@
 
 </body>
 </html>
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+동영상을 넣는 방법
+
+youtube 채널에서 공유 -> 퍼가기 코드를 넣으면 동영상을 넣을수있음
+
+댓글을 통한 클라이언트들과의 상호작용
+
+<p>
+  <div id="disqus_thread"></div>
+<script>
+
+/*
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://web-1-lvbampj1eu.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> </p>
+
+<script id="dsq-count-scr" src="//web-1-lvbampj1eu.disqus.com/count.js" async></script>
+
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+CSS 언어를 배워보자
+
+<!-- css는 전혀 다른 언어이기 때문에 html이 이를 이해하기 위해서는 다른 언어임을 알려줘야함.
+head 안에 <style> 이라는 태그를 이용하는 방법도 있고 , 태그가 아닌 속성을 이용한 방법도 있음
+
+<li><a href="3.html"  style="color:red">  CSS</a>  </li>
+
+"color:red"는 css 가 아니라 html 의 속성이다. style 이라는 속성은 이 값으로 반드시 css 의 효과가 들어온다.
+
+style 태그는 효과만 있어서는 누구를 지정할지 모르기 때문에 a {} 라는 누구를 선택한거임. 이를 선택자 , selecter 라고 하고, color:black;
+를 효과라고 한다.
+
+
+쉽게 웹페이지 안에 css 를 삽입하는 방법에는 2가지.
+1. style 태그를 사용하고 a{} 라는 selecter 를 사용한다. 그 안에 효과를 삽입
+2. 다른 방법은 html 안에 속성을 포함하여 style="color:red" 라는 효과를 포함한다. (선택자가 필요없음 ) -->

@@ -1,13 +1,42 @@
 <! doctype html>
 <html>
 <head>
-  <title> WEB1- html </title>
-  <meta charset="utf-8">
+    <title> WEB1- html </title>
+    <meta charset="utf-8">
+    <style>
+
+    a {
+    color:black ;
+    text-decoration: none;
+    }
+    #active{
+      color:red;
+    }
+    .saw {
+      color:gray;
+    }
+/* .saw 를 했다는 것은 class 값이 saw 라는 태그인데, 이때 . 을 붙인다
+/* saw active 를 설정해도, saw 안에 있는 값으로 파악이 되어서 gray 색깔로 인식 함
+/* 그래서 id 라는 선택자를 쓰면, class 라는 선택자와 충돌해도 우선으로 인식
+/* 강한 순을 표기하자만, id 선택자, class 선택자, 태그 선택자
+아래로 갈수록 인식이 우선 , 이를 css selecter 라고 한다*/
+
+   h1 {
+   text-align:center;
+   font-size:200px;
+    }
+</style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148330088-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148330088-1');
+</script>
 </head>
-
 <body>
-
-
   <h1> <a href="1.html">  Web</a> </h1>
 
   <p>
@@ -15,8 +44,8 @@
     autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </P>
     <ol>
-      <li><a href="2.html">   HTML</a> </li>
-      <li><a href="3.html">   CSS</a>  </li>
+      <li><a href="2.html" class="saw">   HTML</a> </li>
+      <li><a href="3.html" class="saw" id="active" > CSS</a>  </li>   <!-- class 라는 속성. grouping을 하는 도구-->
       <li><a href="4.html">   Javascript</a> </li>
     <ol>
       <h2> CSS </h2>

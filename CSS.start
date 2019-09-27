@@ -1,0 +1,63 @@
+<! doctype html>
+<html>
+<head>
+  <title> WEB1- html </title>
+  <meta charset="utf-8">
+  <style>
+  /* 컴퓨터는 style 안에있는 내용은 전부 css로 해석함 */
+  h1{
+  border:5px solid red;
+  padding:20px;    /* padding 글씨와 박스간의 간격 */
+  margin:0px;  /* 테두리와 테두리의 간격*/
+  display:block; /* h1 은 이미 block 이라는 값이 포함된것이지 */
+  width: 100px; /* block 값을 포기하고 width 를 주면 너비 설정*/
+  text-align: center;
+  }
+
+  /*
+  h1 {
+    border-width:5px;
+    border-color:red;
+    border-style:solid;
+    display:inline;
+    }
+   a{
+   border-width:5px;
+   border-color:red;
+   border-style:solid;
+   display:inline;
+   }
+  아래와 위에는 동등
+  h1,a {
+  border :5px solid red;}
+
+   inline element(해당 글자만큼 박스를 생성한다) block level element 박스의 크기에 관한 이야기
+    */
+    </style>
+</head>
+<body>
+    <h1>Web</h1>
+
+
+    <p><a href="https://www.w3.org/TR/html51/" target="_blank" title="html specification"> Hypertext markup language(HTML)</a>
+      is the standard markup language for
+    <strong>creating <u>web</u> pages</strong> and web applications.
+</body>
+</html>
+
+CSS 언어를 배워보자
+
+<!-- css는 전혀 다른 언어이기 때문에 html이 이를 이해하기 위해서는 다른 언어임을 알려줘야함.
+head 안에 <style> 이라는 태그를 이용하는 방법도 있고 , 태그가 아닌 속성을 이용한 방법도 있음
+
+<li><a href="3.html"  style="color:red">  CSS</a>  </li>
+
+"color:red"는 css 가 아니라 html 의 속성이다. style 이라는 속성은 이 값으로 반드시 css 의 효과가 들어온다.
+
+style 태그는 효과만 있어서는 누구를 지정할지 모르기 때문에 a {} 라는 누구를 선택한거임. 이를 선택자 , selecter 라고 하고, color:black;
+를 효과라고 한다.
+
+
+쉽게 웹페이지 안에 css 를 삽입하는 방법에는 2가지.
+1. style 태그를 사용하고 a{} 라는 selecter 를 사용한다. 그 안에 효과를 삽입
+2. 다른 방법은 html 안에 속성을 포함하여 style="color:red" 라는 효과를 포함한다. (선택자가 필요없음 ) -->
